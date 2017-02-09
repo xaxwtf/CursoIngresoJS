@@ -1,3 +1,2 @@
 # CursoIngresoJS
-Curso de ingreso con JavaScript
-dsasadsadsadasdsad
+Curso de ingreso con JavaScript.
