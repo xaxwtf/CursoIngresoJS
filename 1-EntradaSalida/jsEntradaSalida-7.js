@@ -29,10 +29,11 @@ function restar()
 }
 
 function multiplicar()
-{ var num1;
+{ 
+    var num1;
     var num2;
     var multiplicacion;
-	num1=ducument.getElementById("numeroUno").value;
+	num1=document.getElementById("numeroUno").value;
     num2=document.getElementById("numeroDos").value;
     num1=parseInt(num1);
     num2=parseInt(num2);
@@ -41,10 +42,15 @@ function multiplicar()
 }
 
 function dividir()
-{var num1;
+{
+    var num1;
     var num2;
     var dividir
-    num1=document.getElementById("numeroUno")
-	
+    num1=document.getElementById("numeroUno").value;
+    num2=document.getElementById("numeroDos").value;
+    num1=parseInt(num1)
+    num2=parseInt(num2)
+    dividir=num1/num2
+    alert("el resultado es "+dividir)
 }
 
