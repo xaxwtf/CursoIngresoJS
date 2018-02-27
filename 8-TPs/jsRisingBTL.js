@@ -9,5 +9,104 @@ F.	Nacionalidad, “A” para argentinos, “E” para extranjeros, “N” para
  */
 function ComenzarIngreso () 
 {
- 
+    var edad;
+    var sexo;
+    var estadoCivil;
+    var sueldoBruto;
+    var numLegajo;
+    var nacionalidad;
+    do
+    {
+        edad=prompt("Indique su edad");
+        edad=parseInt(edad);
+        if(edad==null)
+        {
+            break;
+        }
+    }
+    while(edad<18 ||edad > 90)
+    {
+    }
+    document.getElementById("Edad").value=edad;
+    do
+    {
+        sexo=prompt("Indique su Sexo, use f(para femenino)y m (para masculino)")
+        if(sexo==null)
+        {
+            break;
+        }
+     }
+        while(sexo!="f"&&sexo!="m")
+        {
+        }
+    document.getElementById("Sexo").value=sexo;
+    do
+    {
+        estadoCivil=prompt("Indique su estado Civil, 1=soltero 2=casado 3=divorciado 4=viudo")
+        estadoCivil=parseInt(estadoCivil)
+        if(estadoCivil==null)
+        {
+            break;
+        }
+    }
+        while(estadoCivil<1||estadoCivil>4)
+        {
+        }
+         switch(estadoCivil)
+        {
+            case 1:
+            {
+                document.getElementById("EstadoCivil").value="Soltero";
+                break;
+            }
+            case 2:
+            {   
+                document.getElementById("EstadoCivil").value="Casado";
+                break;
+            }
+            case 3:
+            {
+                document.getElementById("EstadoCivil").value="Divorciado"
+                break;
+            }
+            case 4:
+            {
+                document.getElementById("EstadoCivil").value="Viudo";
+                break;
+            }
+            default:
+            {
+                document.getElementById("EstadoCivil").value="No Existe"
+            }
+        } 
+    do
+    {
+        sueldoBruto=prompt("indique su sueldo")
+        sueldoBruto=parseInt(sueldoBruto);
+        if(sueldoBruto==null)
+        {
+            break;
+        }
+    }
+    while(sueldoBruto<8000)
+    {
+    }
+    document.getElementById("Sueldo").value=sueldoBruto;
+    do
+    {
+        numLegajo=prompt("Indique el Nro de Legajo")
+        numLegajo=parseInt(numLegajo);
+        if(numLegajo==null)
+        {
+            break;
+        }
+    }
+    while(numLegajo<1000)
+    {
+    }
+    document.getElementById("Legajo").value=numLegajo;
+    do
+    {
+        
+    }
 }
