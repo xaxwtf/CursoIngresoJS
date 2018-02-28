@@ -14,7 +14,7 @@ function ComenzarIngreso ()
     var estadoCivil;
     var sueldoBruto;
     var numLegajo;
-    var nacionalidad;
+    var nacionalidad=nacionalidad.tolowercase();
     do
     {
         edad=prompt("Indique su edad");
@@ -107,6 +107,12 @@ function ComenzarIngreso ()
     document.getElementById("Legajo").value=numLegajo;
     do
     {
-        
+        nacionalidad=prompt("Indique su Nacionanlidad, A si es Argentino, E si es extrangero y N si esta Nacionalizado");
+        if(nacionalidad==null)
+        {
+            break;
+        }
+        while(nacionalidad!="A"&&nacionalidad!="B")
+
     }
 }
